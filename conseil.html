@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2a5926">
+    <title>Conseils agricoles - AgroBoost</title>
+    <style>
+        /* Reset - Même style que la page précédente */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Conteneur mobile - Mêmes paramètres */
+        .mobile-interface {
+            width: 320px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        /* En-tête adapté */
+        .app-header {
+            padding: 24px 16px 16px;
+        }
+        
+        .page-title {
+            color: #2a5926;
+            font-size: 22px;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        
+        .page-subtitle {
+            color: #555;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            line-height: 1.4;
+        }
+        
+        /* Section conseils */
+        .advice-section {
+            padding: 0 16px;
+            margin-bottom: 24px;
+        }
+        
+        .advice-title {
+            color: #2a5926;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .advice-text {
+            color: #333;
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        /* Séparateur */
+        .divider {
+            height: 1px;
+            background-color: #f0f0f0;
+            margin: 16px 0;
+        }
+        
+        /* Boutons en bas */
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .action-button {
+            color: #2a5926;
+            font-size: 16px;
+            font-weight: 500;
+            background: none;
+            border: none;
+            padding: 8px 12px;
+        }
+		.back-button {
+			display: inline-block;
+			padding: 16px;
+			font-size: 24px;
+			color: #2a5926;
+			text-decoration: none;
+			-webkit-tap-highlight-color: transparent;
+		}
+    </style>
+</head>
+<body>
+    <div class="mobile-interface">
+		<a href="index.html" class="back-button">←</a>
+        <div class="app-header">
+            <h1 class="page-title">Conseils agricoles</h1>
+            <p class="page-subtitle">Découvrez des conseils pour optimiser vos pratiques agricoles</p>
+            
+            <div class="advice-section">
+                <h2 class="advice-title">Gestion de l'irrigation</h2>
+                <p class="advice-text">Surveillez l'humidité du sol et ajustez les apports en eau en fonction des besoins des plantes</p>
+                
+                <h2 class="advice-title">Rotation des cultures</h2>
+                <p class="advice-text">Alternez les différentes cultures d'une saison à l'autre pour améliorer la fertilité du sol</p>
+                
+                <h2 class="advice-title">Protection intégrée</h2>
+                <p class="advice-text">Utilisez des méthodes biologiques et mécaniques pour réduire l'usage de pesticides</p>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!--<div class="action-buttons">
+                <button class="action-button">Modifier</button>
+                <button class="action-button">Sélectionner</button>
+                <button class="action-button">Enreg.</button>-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

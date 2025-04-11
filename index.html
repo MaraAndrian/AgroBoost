@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#2a5926">
+    <title>AgroBoost</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Conteneur mobile */
+        .mobile-interface {
+            width: 320px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        /* En-tête */
+        .app-header {
+            padding: 24px 16px 16px;
+            position: relative;
+        }
+        
+        .app-title {
+            color: #2a5926;
+            font-size: 22px;
+            font-weight: 700;
+            text-align: left;
+            margin-bottom: 28px;
+        }
+        
+        /* Items de menu */
+        .menu-item {
+            padding: 14px 16px;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none; /* Supprime le soulignement des liens */
+            color: inherit; /* Hérite la couleur du parent */
+        }
+        
+        .menu-item:hover {
+            background-color: #f8f8f8; /* Effet de survol léger */
+        }
+        
+        .menu-text {
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        /* Météo */
+        .weather-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .temperature {
+            color: #2a5926;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .weather-desc {
+            color: #777;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-interface">
+        <div class="app-header">
+            <h1 class="app-title">AgroBoost</h1>
+            
+            <!-- Premier item intégré dans l'en-tête -->
+            <a href="index.html" class="menu-item" style="border-top: none; padding-top: 0;">
+                <span class="menu-text">Commencer</span>
+            </a>
+        </div>
+        
+        <!-- Items suivants -->
+        <div class="menu-item">
+            <span class="menu-text">Antananarivo</span>
+            <div class="weather-block">
+                <span class="temperature">24°C</span>
+                <span class="weather-desc">Partiellement nuageux</span>
+            </div>
+        </div>
+        
+        <a href="conseil.html" class="menu-item">
+            <span class="menu-text">Conseils agricoles</span>
+        </a>
+        
+        <a href="suivi.html" class="menu-item">
+            <span class="menu-text">Suivi des cultures</span>
+        </a>
+        
+        <div class="menu-item">
+            <span class="menu-text">Vendre ma production</span>
+        </div>
+    </div>
+</body>
+</html>
