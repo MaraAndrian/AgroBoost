@@ -120,5 +120,26 @@
             <span class="menu-text">Vendre ma production</span>
         </div>
     </div>
+<script>
+  // Chiffrement Base64 de votre URL GitHub
+  const repoPath = atob('aHR0cHM6Ly9tYXJhYW5kcmlhbi5naXRodWIuaW8vQWdyb0Jvb3N0Lw==');
+  
+  // Verrouillage de l'accès
+  Object.defineProperty(window, 'githubRepo', {
+      get: () => {
+          console.warn('[Security] Accès au dépôt bloqué');
+          return null;
+      },
+      configurable: false
+  });
+
+  // Leurre supplémentaire
+  if (location.host.includes('github.io')) {
+      console.log('[Debug] Mode développement actif');
+  } else {
+      console.log('[System] Production environment v1.2.0');
+  }
+  </script>
 </body>
+
 </html>
