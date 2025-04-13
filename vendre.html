@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendre ma production - AgroBoost</title>
+    <style>
+        /* Styles de base réutilisés */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .mobile-interface {
+            width: 320px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+        
+        .app-header {
+            padding: 24px 16px 16px;
+        }
+        
+        .page-title {
+            color: #2a5926;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        /* Nouveaux styles spécifiques à cette page */
+        .production-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 0 16px 16px;
+        }
+        
+        .production-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        
+        .production-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .production-image {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .production-name {
+            color: #2a5926;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        
+        .others-card {
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+        }
+        
+        .others-icon {
+            font-size: 24px;
+            color: #777;
+            margin-bottom: 8px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .action-button {
+            color: #2a5926;
+            font-size: 16px;
+            font-weight: 500;
+            background: none;
+            border: none;
+            padding: 8px 12px;
+        }
+        
+        .action-button:last-child {
+            color: white;
+            background-color: #2a5926;
+            border-radius: 6px;
+            padding: 8px 16px;
+        }
+		.back-button {
+			display: inline-block;
+			padding: 16px;
+			font-size: 24px;
+			color: #2a5926;
+			text-decoration: none;
+			-webkit-tap-highlight-color: transparent;
+		}
+    </style>
+</head>
+<body>
+    <div class="mobile-interface">
+        <!-- Bouton Retour -->
+        <a href="index.html" class="back-button">←</a>
+        
+        <div class="app-header">
+            <h1 class="page-title">Vendre ma production</h1>
+            
+            <div class="production-grid">
+                <!-- Riz -->
+                <div class="production-card">
+                    <img src="riz.jpeg" alt="Riz" class="production-image">
+                    <div class="production-name">Riz</div>
+                </div>
+                
+                <!-- Blé -->
+                <div class="production-card">
+                    <img src="ble.jpeg" alt="Blé" class="production-image">
+                    <div class="production-name">Blé</div>
+                </div>
+                
+                <!-- Arachide -->
+                <div class="production-card">
+                    <img src="arachide.jpeg" alt="Arachide" class="production-image">
+                    <div class="production-name">Arachide</div>
+                </div>
+                
+                <!-- Autres productions -->
+                <div class="production-card others-card">
+                    <div class="others-icon">+</div>
+                    <div class="production-name">Autres productions</div>
+                </div>
+            </div>
+            
+            <!--<div class="action-buttons">
+                <button class="action-button">Annuler</button>
+                <button class="action-button">Publier</button>
+            </div>-->
+        </div>
+    </div>
+
+    <!-- Protection GitHub -->
+    <script>
+    const repoPath = atob('aHR0cHM6Ly9naXRodWIuY29tL3ZvdHJldXNlcm5hbWUvYWdyb2Jvb3N0');
+    Object.defineProperty(window, 'githubRepo', {
+        get: () => {
+            console.warn('[Security] Accès au dépôt bloqué');
+            return null;
+        }
+    });
+    </script>
+</body>
+</html>
